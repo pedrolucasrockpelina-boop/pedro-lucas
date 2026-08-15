@@ -1,0 +1,50 @@
+<!DOCTYPE html><!--significa que o documento está em html-->
+<html lang="pt-BR"> <center> <!--significa que o documento está em portugues-Brasil-->
+    <meta charset="UTF-8"> <!--permite usar acentos e caracteres especiais-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Faz a página se adaptar a celulares, tablets e computadores.-->
+    <center>Login</title> <link rel="stylesheet" href="vale.css"> <!--Define o nome que aparece na aba do navegador.-->
+    </head> 
+    <body>
+
+<div class="login"><!--Cria uma divisão (div) para organizar a área de login.-->
+    <div class="login-box"><!--Cria outra divisão, dessa vez para a caixa do formulário de login.-->
+        <h1>Entrar</h1><!--é o título principal da página.-->
+        <p class="subtitle">Acesse sua conta</p><!--significa parágrafo.-->
+
+        <form id="loginForm"><!--O id="loginForm" identifica esse formulário para que o JavaScript possa trabalhar com ele.-->
+            <div class="input-group"><!--Cria um grupo para organizar o campo.-->
+                <label for="email">E-mail</label><!--é o texto que identifica o campo.-->
+                <input 
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha</label><!--Mostra o texto Senha acima do campo.-->
+                <input
+                    type="password"     
+                    id="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+            </div>
+
+            <button type="submit">Entrar</button>
+
+            <p id="mensagem"></p>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body> </html>
+<div class="paginacao">
+  <ul class="lista-paginas">
+    <li><a href="cadastro2.html" class="botao-nav">Próxima Página&raquo;</a></li>
+  </ul>
+</div>
+<link rel="stylesheet" href="cfile:///C:/xampp/htdocs/CB%20VALE/cadastro2.html">
