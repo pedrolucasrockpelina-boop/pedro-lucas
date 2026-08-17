@@ -1,124 +1,310 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Método Alta Performance - Transforme sua Rotina</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0fdf4',
-                            500: '#22c55e',
-                            600: '#16a34a',
-                            700: '#15803d',
-                        }
-                    }
-                }
-            }
+    <title>Transforme Sua Vida com o Nosso Produto</title>
+    <style>
+        /* Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-    </script>
-</head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased">
 
-    <!-- HEADER / HERO SECTION -->
-    <header class="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 py-20 lg:py-32 border-b border-slate-800">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <span class="inline-block bg-brand-500/10 text-brand-500 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-brand-500/20">
-                🚀 O Fim da Procrastinação Começa Aqui
-            </span>
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-                Dobre sua <span class="text-brand-500">Produtividade</span> em 21 Dias <br class="hidden sm:inline">Sem Burnout
-            </h1>
-            <p class="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 mb-10">
-                Descubra o método comprovado para organizar sua rotina, focar no que realmente importa e conquistar mais tempo livre para você e sua família.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#checkout" class="bg-brand-600 hover:bg-brand-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-brand-600/30 transition transform hover:-translate-y-0.5">
-                    Quero Garantir Minha Vaga
-                </a>
-                <a href="#beneficios" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold px-6 py-4 rounded-xl border border-slate-700 transition">
-                    Saiba Como Funciona
-                </a>
-            </div>
-            <p class="text-xs text-slate-400 mt-4">⚡ Acesso imediato • Garantia de 7 dias</p>
-        </div>
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho / Hero Section */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            opacity: 0.9;
+        }
+
+        /* Botão de Chamada para Ação (CTA) */
+        .btn {
+            background-color: #27ae60;
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #219653;
+        }
+
+        /* Seção de Benefícios */
+        .benefits {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .benefits h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #1e3c72;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .benefit-card h3 {
+            margin-bottom: 15px;
+            color: #2a5298;
+        }
+
+        /* Seção de Chamada Final */
+        .cta-section {
+            background-color: #eef2f7;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 20px;
+            color: #1e3c72;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Alcance Seus Objetivos Mais Rápidost</h1>
+        <p>Descubra o método definitivo que vai simplificar a sua rotina e trazer resultados incríveis já nas primeiras semanas.</p>
+        <a href="#comprar" class="btn">Quero Garantir o Meu!</a>
     </header>
 
-    <!-- BENEFÍCIOS SECTION -->
-    <section id="beneficios" class="py-20 bg-slate-900/50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">O que você vai conquistar com o método?</h2>
-                <p class="text-slate-400 text-lg">Tudo o que você precisa para assumir o controle do seu dia a dia.</p>
+    <!-- Benefícios -->
+    <section class="benefits">
+        <h2>Por que escolher o nosso produto?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>🚀 Simples e Prático</h3>
+                <p>Desenvolvido para que qualquer pessoa possa aplicar, independentemente do nível de experiência.</p>
             </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700/60 hover:border-brand-500/50 transition">
-                    <div class="w-12 h-12 bg-brand-500/10 rounded-xl flex items-center justify-center text-brand-500 text-2xl mb-6">🎯</div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Foco Cirúrgico</h3>
-                    <p class="text-slate-400 leading-relaxed">Elimine as distrações diárias e aprenda a direcionar sua energia para tarefas que geram resultados reais.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700/60 hover:border-brand-500/50 transition">
-                    <div class="w-12 h-12 bg-brand-500/10 rounded-xl flex items-center justify-center text-brand-500 text-2xl mb-6">⏰</div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Gestão de Tempo Real</h3>
-                    <p class="text-slate-400 leading-relaxed">Pare de apagar incêndios e construa uma agenda estratégica onde sobra tempo para o seu descanso.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700/60 hover:border-brand-500/50 transition">
-                    <div class="w-12 h-12 bg-brand-500/10 rounded-xl flex items-center justify-center text-brand-500 text-2xl mb-6">🔋</div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Energia Constante</h3>
-                    <p class="text-slate-400 leading-relaxed">Acabe com a exaustão mental no fim do dia mantendo níveis ótimos de disposição do início ao fim.</p>
-                </div>
+            <div class="benefit-card">
+                <h3>⏱️ Economia de Tempo</h3>
+                <p>Otimize o seu dia a dia e foque realmente no que traz retorno para a sua vida.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>🔒 Garantia Total</h3>
+                <p>Se você não gostar dos resultados em até 7 dias, devolvemos 100% do seu dinheiro sem burocracia.</p>
             </div>
         </div>
     </section>
 
-    <!-- OFERTA / CHECKOUT SECTION -->
-    <section id="checkout" class="py-20 bg-slate-900 border-t border-slate-800">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-br from-slate-800 to-slate-800/80 rounded-3xl border border-brand-500/30 p-8 sm:p-12 shadow-2xl relative overflow-hidden text-center">
-                
-                <span class="bg-brand-500 text-slate-950 font-bold text-xs uppercase px-3 py-1 rounded-full mb-6 inline-block">
-                    Oferta por Tempo Limitado
-                </span>
+    <!-- Seção de Conversão Final -->
+    <section class="cta-section" id="comprar">
+        <h2>Pronto para dar o próximo passo?</h2>
+        <p style="margin-bottom: 30px; color: #555;">Oferta por tempo limitado. Aproveite condições especiais de lançamento.</p>
+        <a href="#" class="btn">Comprar Agora por Apenas R$ 97</a>
+    </section>
 
-                <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">Método Alta Performance</h2>
-                <p class="text-slate-300 mb-8 max-w-xl mx-auto">Acesso completo ao treinamento em vídeo, planilhas exclusivas de planejamento e comunidade de alunos.</p>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Nome do Seu Produto. Todos os direitos reservados.</p>
+    </footer>
 
-                <div class="mb-8">
-                    <span class="text-slate-400 text-lg line-through">De R$ 497,00</span>
-                    <div class="text-4xl sm:text-6xl font-black text-brand-500 my-2">
-                        R$ 97<span class="text-xl font-normal text-slate-300">,00</span>
-                    </div>
-                    <span class="text-slate-400 text-sm">ou em até 12x de R$ 9,74 no cartão</span>
-                </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforme Sua Vida com o Nosso Produto</title>
+    <style>
+        /* Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-                <a href="#" class="block w-full max-w-md mx-auto bg-brand-600 hover:bg-brand-500 text-white font-bold text-lg py-4 rounded-xl shadow-lg shadow-brand-600/30 transition transform hover:-translate-y-0.5 text-center mb-6">
-                    Quero Aproveitar Esta Oferta Agora
-                </a>
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
 
-                <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-400">
-                    <span class="flex items-center gap-1">🔒 Compra 100% Segura</span>
-                    <span class="flex items-center gap-1">🛡️ Garantia de 7 Dias</span>
-                    <span class="flex items-center gap-1">📥 Entrega Imediata</span>
-                </div>
+        /* Cabeçalho / Hero Section */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            opacity: 0.9;
+        }
+
+        /* Botão de Chamada para Ação (CTA) */
+        .btn {
+            background-color: #27ae60;
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #219653;
+        }
+
+        /* Seção de Benefícios */
+        .benefits {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .benefits h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #1e3c72;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .benefit-card h3 {
+            margin-bottom: 15px;
+            color: #2a5298;
+        }
+
+        /* Seção de Chamada Final */
+        .cta-section {
+            background-color: #eef2f7;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 20px;
+            color: #1e3c72;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Alcance Seus Objetivos Mais Rápidost</h1>
+        <p>Descubra o método definitivo que vai simplificar a sua rotina e trazer resultados incríveis já nas primeiras semanas.</p>
+        <a href="#comprar" class="btn">Quero Garantir o Meu!</a>
+    </header>
+
+    <!-- Benefícios -->
+    <section class="benefits">
+        <h2>Por que escolher o nosso produto?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>🚀 Simples e Prático</h3>
+                <p>Desenvolvido para que qualquer pessoa possa aplicar, independentemente do nível de experiência.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>⏱️ Economia de Tempo</h3>
+                <p>Otimize o seu dia a dia e foque realmente no que traz retorno para a sua vida.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>🔒 Garantia Total</h3>
+                <p>Se você não gostar dos resultados em até 7 dias, devolvemos 100% do seu dinheiro sem burocracia.</p>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 py-8 text-center text-slate-500 text-sm border-t border-slate-900">
-        <div class="max-w-6xl mx-auto px-4">
-            <p>&copy; 2026 Método Alta Performance. Todos os direitos reservados.</p>
-            <p class="mt-2 text-xs">Este site não faz parte do Facebook ou do Google. Os resultados podem variar de pessoa para pessoa.</p>
-        </div>
+    <!-- Seção de Conversão Final -->
+    <section class="cta-section" id="comprar">
+        <h2>Pronto para dar o próximo passo?</h2>
+        <p style="margin-bottom: 30px; color: #555;">Oferta por tempo limitado. Aproveite condições especiais de lançamento.</p>
+        <a href="#" class="btn">Comprar Agora por Apenas R$ 97</a>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Nome do Seu Produto. Todos os direitos reservados.</p>
     </footer>
 
 </body>
