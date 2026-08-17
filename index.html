@@ -3,308 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transforme Sua Vida com o Nosso Produto</title>
+    <title>Meu Site Simples</title>
     <style>
-        /* Estilos Gerais */
-        * {
+        /* Estilos básicos para deixar a página agradável */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f9f9f9;
+            background-color: #f4f4f9;
             color: #333;
-            line-height: 1.6;
         }
-
-        /* Cabeçalho / Hero Section */
         header {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 30px auto;
-            opacity: 0.9;
-        }
-
-        /* Botão de Chamada para Ação (CTA) */
-        .btn {
-            background-color: #27ae60;
-            color: white;
-            padding: 15px 35px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background 0.3s ease;
-            display: inline-block;
-        }
-
-        .btn:hover {
-            background-color: #219653;
-        }
-
-        /* Seção de Benefícios */
-        .benefits {
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 0 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 2rem;
             text-align: center;
         }
-
-        .benefits h2 {
-            font-size: 2rem;
-            margin-bottom: 40px;
-            color: #1e3c72;
-        }
-
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .benefit-card {
-            background: white;
-            padding: 30px;
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
-
-        .benefit-card h3 {
-            margin-bottom: 15px;
-            color: #2a5298;
+        h2 {
+            color: #007bff;
         }
-
-        /* Seção de Chamada Final */
-        .cta-section {
-            background-color: #eef2f7;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .cta-section h2 {
-            margin-bottom: 20px;
-            color: #1e3c72;
-        }
-
-        /* Rodapé */
         footer {
-            background-color: #222;
-            color: white;
             text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .botao {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        .botao:hover {
+            background-color: #218838;
         }
     </style>
 </head>
 <body>
 
-    <!-- Hero Section -->
     <header>
-        <h1>Alcance Seus Objetivos Mais Rápidost</h1>
-        <p>Descubra o método definitivo que vai simplificar a sua rotina e trazer resultados incríveis já nas primeiras semanas.</p>
-        <a href="#comprar" class="btn">Quero Garantir o Meu!</a>
+        <h1>Bem-vindo ao Meu Site!</h1>
+        <p>Este é um modelo básico criado em HTML e CSS.</p>
     </header>
 
-    <!-- Benefícios -->
-    <section class="benefits">
-        <h2>Por que escolher o nosso produto?</h2>
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <h3>🚀 Simples e Prático</h3>
-                <p>Desenvolvido para que qualquer pessoa possa aplicar, independentemente do nível de experiência.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>⏱️ Economia de Tempo</h3>
-                <p>Otimize o seu dia a dia e foque realmente no que traz retorno para a sua vida.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>🔒 Garantia Total</h3>
-                <p>Se você não gostar dos resultados em até 7 dias, devolvemos 100% do seu dinheiro sem burocracia.</p>
-            </div>
-        </div>
-    </section>
+    <main>
+        <h2>Sobre a Página</h2>
+        <p>Aqui você pode colocar a introdução do seu projeto, portfólio ou empresa. O código é limpo, responsivo e fácil de editar.</p>
+        
+        <h2>Principais Recursos</h2>
+        <ul>
+            <li>Estrutura limpa em HTML5</li>
+            <li>Estilização básica com CSS</li>
+            <li>Fácil personalização</li>
+        </ul>
 
-    <!-- Seção de Conversão Final -->
-    <section class="cta-section" id="comprar">
-        <h2>Pronto para dar o próximo passo?</h2>
-        <p style="margin-bottom: 30px; color: #555;">Oferta por tempo limitado. Aproveite condições especiais de lançamento.</p>
-        <a href="#" class="btn">Comprar Agora por Apenas R$ 97</a>
-    </section>
+        <a href="https://google.com" target="_blank" class="botao">Visite o Google</a>
+    </main>
 
-    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2026 Nome do Seu Produto. Todos os direitos reservados.</p>
-    </footer>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transforme Sua Vida com o Nosso Produto</title>
-    <style>
-        /* Estilos Gerais */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Cabeçalho / Hero Section */
-        header {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 30px auto;
-            opacity: 0.9;
-        }
-
-        /* Botão de Chamada para Ação (CTA) */
-        .btn {
-            background-color: #27ae60;
-            color: white;
-            padding: 15px 35px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background 0.3s ease;
-            display: inline-block;
-        }
-
-        .btn:hover {
-            background-color: #219653;
-        }
-
-        /* Seção de Benefícios */
-        .benefits {
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 0 20px;
-            text-align: center;
-        }
-
-        .benefits h2 {
-            font-size: 2rem;
-            margin-bottom: 40px;
-            color: #1e3c72;
-        }
-
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .benefit-card {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-
-        .benefit-card h3 {
-            margin-bottom: 15px;
-            color: #2a5298;
-        }
-
-        /* Seção de Chamada Final */
-        .cta-section {
-            background-color: #eef2f7;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .cta-section h2 {
-            margin-bottom: 20px;
-            color: #1e3c72;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Hero Section -->
-    <header>
-        <h1>Alcance Seus Objetivos Mais Rápidost</h1>
-        <p>Descubra o método definitivo que vai simplificar a sua rotina e trazer resultados incríveis já nas primeiras semanas.</p>
-        <a href="#comprar" class="btn">Quero Garantir o Meu!</a>
-    </header>
-
-    <!-- Benefícios -->
-    <section class="benefits">
-        <h2>Por que escolher o nosso produto?</h2>
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <h3>🚀 Simples e Prático</h3>
-                <p>Desenvolvido para que qualquer pessoa possa aplicar, independentemente do nível de experiência.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>⏱️ Economia de Tempo</h3>
-                <p>Otimize o seu dia a dia e foque realmente no que traz retorno para a sua vida.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>🔒 Garantia Total</h3>
-                <p>Se você não gostar dos resultados em até 7 dias, devolvemos 100% do seu dinheiro sem burocracia.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção de Conversão Final -->
-    <section class="cta-section" id="comprar">
-        <h2>Pronto para dar o próximo passo?</h2>
-        <p style="margin-bottom: 30px; color: #555;">Oferta por tempo limitado. Aproveite condições especiais de lançamento.</p>
-        <a href="#" class="btn">Comprar Agora por Apenas R$ 97</a>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2026 Nome do Seu Produto. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
     </footer>
 
 </body>
